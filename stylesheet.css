@@ -1,0 +1,52 @@
+body {
+  background-color: #ecf7ff;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.projectSectionImg {
+  width: 20%;
+}
+
+.logos {
+  filter: grayscale(100%);
+}
+
+.ourServices,
+.recentProjects {
+  background-color: #f2f4fc;
+  width: 20%;
+}
+
+.link-button {
+  background-color: #072ac8;
+  color: #ecf7ff;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+#simplifyImg {
+  width: 40%;
+}
+
+#clientOpinions {
+  background-color: #292e47;
+  color: #f2f4fc;
+}
+
+#clientOpinionsP {
+  color: #ffc600;
+}
+
+#contactSection {
+  background-color: #ffc600;
+  width: 40%;
+}
+
+#heroImg {
+  width: 40%;
+}
