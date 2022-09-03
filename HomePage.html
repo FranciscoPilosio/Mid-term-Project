@@ -9,32 +9,36 @@
   </head>
   <body>
     <nav>
-      <ul>
+      <ul class="flex-container">
         <img
           alt="Circle"
           src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
         />
-        <li><a href="">Home</a></li>
+        <li><a id="homeColor" href="">Home</a></li>
         <li><a href="">Projects</a></li>
         <li><a href=""> Services</a></li>
         <li><a class="link-button" href=""> Contact Us</a></li>
       </ul>
     </nav>
-    <header>
-      <h1>Empower Your Business With Stunning Design</h1>
-      <img
-        id="heroImg"
-        src="https://drive.google.com/uc?export=view&id=1CsLdrFBIjhW9xgX8kX80kej0iWIWOyqZ"
-        alt="hero-image"
-      />
-      <p>
-        Circle is a digital design and development studio. We design and develop
-        astonishing websites and mobile apps.
-      </p>
-      <ul>
-        <li><a class="link-button" href=""> Get in touch</a></li>
-        <li><a href=""> See our work</a></li>
-      </ul>
+    <header class="grid-container">
+      <div id="headerStyle">
+        <h1>Empower Your Business With Stunning Design!</h1>
+        <p>
+          Circle is a digital design and development studio. We design and
+          develop astonishing websites and mobile apps.
+        </p>
+        <ul class="grid-container">
+          <li><a class="link-button" href=""> Get in touch</a></li>
+          <li><a href=""> See our work</a></li>
+        </ul>
+      </div>
+      <div id="heroImg">
+        <img
+          id="heroImg"
+          src="https://drive.google.com/uc?export=view&id=1CsLdrFBIjhW9xgX8kX80kej0iWIWOyqZ"
+          alt="hero-image"
+        />
+      </div>
     </header>
     <section>
       <img
@@ -65,45 +69,53 @@
     </section>
     <section>
       <h2>Recent Projects</h2>
-      <img
-        class="projectSectionImg"
-        alt="Simplify Project"
-        src="https://drive.google.com/uc?export=view&id=1a-7rFlxvHg0g6yfl7hAVksayYQkJzk1b"
-      />
-      <div class="recentProjects">
-        <h4>Simplify Project</h4>
-        <p>
-          UI Design & App Development <br /><br />
-          <a href="">Learn more</a>
-        </p>
-      </div>
-      <img
-        class="projectSectionImg"
-        alt="Dashcoin"
-        src="https://drive.google.com/uc?export=view&id=1Vg3OCJ0t9R26v0p7Q5xX8eGOJcnZuU9n"
-      />
-      <div class="recentProjects">
-        <h4>Dashcoin</h4>
-        <p>
-          Web Development <br /><br />
-          <a href="">Learn more</a>
-        </p>
-      </div>
-      <img
-        class="projectSectionImg"
-        alt="Vectorify"
-        src="https://drive.google.com/uc?export=view&id=1KfqL-SDNn7t4ZTsH5hrMF5DRG3NBBl1r"
-      />
-      <div class="recentProjects">
-        <h4>Vectorify</h4>
-        <p>
-          User Expierence Desing <br /><br />
-          <a href="">Learn more</a>
-        </p>
+      <div class="grid-container">
+        <div>
+          <img
+            class="projectSectionImg"
+            alt="Simplify Project"
+            src="https://drive.google.com/uc?export=view&id=1a-7rFlxvHg0g6yfl7hAVksayYQkJzk1b"
+          />
+          <div class="recentProjects">
+            <h4>Simplify Project</h4>
+            <p>
+              UI Design & App Development <br /><br />
+              <a class="blueLetters" href="">Learn more</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="projectSectionImg"
+            alt="Dashcoin"
+            src="https://drive.google.com/uc?export=view&id=1Vg3OCJ0t9R26v0p7Q5xX8eGOJcnZuU9n"
+          />
+          <div class="recentProjects">
+            <h4>Dashcoin</h4>
+            <p>
+              Web Development <br /><br />
+              <a class="blueLetters" href="">Learn more</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="projectSectionImg"
+            alt="Vectorify"
+            src="https://drive.google.com/uc?export=view&id=1KfqL-SDNn7t4ZTsH5hrMF5DRG3NBBl1r"
+          />
+          <div class="recentProjects">
+            <h4>Vectorify</h4>
+            <p>
+              User Expierence Desing <br /><br />
+              <a class="blueLetters" href="">Learn more</a>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <div id="clientOpinions">
-      <h2>Here What Our Clients Have to Say</h2>
+    <div class="section-text" id="clientOpinions">
+      <h2 id="h2White">Here What Our Clients Have to Say</h2>
       <p id="clientOpinionsP">
         "Circle helped s throught every stage of our startup. We really enjoyed
         working with you"
@@ -111,50 +123,58 @@
     </div>
     <section>
       <h2>Our Services</h2>
-      <img
-        alt="User Interface Design"
-        src="https://drive.google.com/uc?export=view&id=1hSGi_VgP3Cd0KHSCzBekiqORXLX3pGsJ"
-      />
-      <div class="ourServices">
-        <h4>User Interface Design</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          consequuntur modi quis molestias, quasi perspiciatis facilis ratione
-          qui dolores, expedita dignissimos corporis quidem? Facilis officia
-          dolore voluptate ipsum molestiae dignissimos. <br /><br />
-          <a href="">Learn more</a>
-        </p>
-      </div>
-      <img
-        alt="User Expierence Design"
-        src="https://drive.google.com/uc?export=view&id=17QjvpXliiAuA2MdqHS0Q3e1a7lGRfRah"
-      />
-      <div class="ourServices">
-        <h4>User Expierence Design</h4>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-          repudiandae quibusdam dignissimos magnam velit voluptate tempora
-          suscipit commodi ipsam impedit corporis quidem eius quod qui veniam,
-          quas aliquid quae laborum. <br /><br />
-          <a href="">Learn more</a>
-        </p>
-      </div>
-      <img
-        alt="Application Development"
-        src="https://drive.google.com/uc?export=view&id=17hZsjHGK4UoT5C-f_vpnVm7a69NYBT0E"
-      />
-      <div class="ourServices">
-        <h4>Application Development</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui
-          blanditiis neque in eaque, optio repudiandae beatae saepe. Tempore
-          nesciunt autem cumque maiores tenetur totam est vel architecto officia
-          fuga. <br /><br />
-          <a href="">Learn more</a>
-        </p>
+      <div class="grid-container">
+        <div>
+          <img
+            alt="User Interface Design"
+            src="https://drive.google.com/uc?export=view&id=1hSGi_VgP3Cd0KHSCzBekiqORXLX3pGsJ"
+          />
+          <div class="ourServices">
+            <h4>User Interface Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              consequuntur modi quis molestias, quasi perspiciatis facilis
+              ratione qui dolores, expedita dignissimos corporis quidem? Facilis
+              officia dolore voluptate ipsum molestiae dignissimos. <br /><br />
+              <a class="blueLetters" href="">Learn more</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            alt="User Expierence Design"
+            src="https://drive.google.com/uc?export=view&id=17QjvpXliiAuA2MdqHS0Q3e1a7lGRfRah"
+          />
+          <div class="ourServices">
+            <h4>User Expierence Design</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              repudiandae quibusdam dignissimos magnam velit voluptate tempora
+              suscipit commodi ipsam impedit corporis quidem eius quod qui
+              veniam, quas aliquid quae laborum. <br /><br />
+              <a class="blueLetters" href="">Learn more</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            alt="Application Development"
+            src="https://drive.google.com/uc?export=view&id=17hZsjHGK4UoT5C-f_vpnVm7a69NYBT0E"
+          />
+          <div class="ourServices">
+            <h4>Application Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+              qui blanditiis neque in eaque, optio repudiandae beatae saepe.
+              Tempore nesciunt autem cumque maiores tenetur totam est vel
+              architecto officia fuga. <br /><br />
+              <a class="blueLetters" href="">Learn more</a>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="contactSection">
+    <section class="section-text" id="contactSection">
       <h2>Do you have any questions?</h2>
       <p>Let us help you!</p>
       <form>
@@ -162,13 +182,16 @@
         <a class="link-button" href="">Suscribe</a>
       </form>
     </section>
-    <footer>
-      <img
-        alt="Circle"
-        src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
-      />
-      <p>2972 Westheimer Rd. Santa Ana , Illinois 85486</p>
-      <ul>
+    <footer class="grid-footer">
+      <div>
+        <img
+          alt="Circle"
+          src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
+        />
+        <p>2972 Westheimer Rd. Santa Ana , Illinois 85486</p>
+      </div>
+
+      <ul class="grid-container-footer">
         <li><a href="">Team</a></li>
         <li><a href="">Service</a></li>
         <li><a href="">About Us</a></li>
