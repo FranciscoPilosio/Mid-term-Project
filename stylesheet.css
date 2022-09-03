@@ -1,34 +1,99 @@
 body {
   background-color: #ecf7ff;
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
+  font-family: sans-serif;
 }
 
 ul,
 a {
   list-style: none;
   text-decoration: none;
+  color: #6b708d;
 }
+
 .projectSectionImg {
-  width: 20%;
+  width: 40%;
+}
+
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  color: #292e47;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #292e47;
+}
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #292e47;
+}
+
+.blueLetters {
+  color: #072ac8;
 }
 
 .logos {
   filter: grayscale(100%);
+  padding: 2%;
 }
 
 .ourServices,
 .recentProjects {
   background-color: #f2f4fc;
-  width: 20%;
+  margin-left: 2%;
 }
 
 .link-button {
   background-color: #072ac8;
   color: #ecf7ff;
-
   text-align: center;
   text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+.grid-container {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-container-footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-items: end;
+}
+
+.section-text {
+  padding: 75px 0;
+  text-align: center;
+  margin: 10px auto;
+}
+
+#headerStyle {
+  margin-top: 10px;
+}
 #simplifyImg {
   width: 40%;
 }
@@ -36,6 +101,8 @@ a {
 #clientOpinions {
   background-color: #292e47;
   color: #f2f4fc;
+  height: 250px;
+  left: 60px;
 }
 
 #clientOpinionsP {
@@ -44,9 +111,33 @@ a {
 
 #contactSection {
   background-color: #ffc600;
-  width: 40%;
+  height: 200px;
+  left: 60px;
 }
 
 #heroImg {
   width: 40%;
+}
+#h2White {
+  color: #ecf7ff;
+}
+#heroImg {
+  width: 90%;
+}
+
+#homeColor {
+  color: #072ac8;
+}
+
+#imgPlaceholder {
+  background: "";
+}
+
+@media (max-width: 480px) {
+  .link-button {
+    display: none;
+  }
+  .grid-container {
+    display: block;
+  }
 }
