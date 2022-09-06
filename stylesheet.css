@@ -13,15 +13,21 @@ a {
   text-decoration: none;
   color: #6b708d;
 }
+p {
+  margin-bottom: 30px;
+}
+
+section {
+  margin-top: 60px;
+}
 
 .projectSectionImg {
   width: 40%;
 }
 
-
 h1 {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 70px;
   color: #292e47;
 }
 
@@ -43,6 +49,8 @@ h3 {
 .logos {
   filter: grayscale(100%);
   padding: 2%;
+  width: 100px;
+  height: 100px;
 }
 
 .ourServices,
@@ -72,8 +80,18 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 100px;
 }
 
+.flex-nav {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-nav li {
+  padding: 10%;
+}
 .grid-footer {
   display: grid;
   grid-template-columns: auto auto;
@@ -83,12 +101,39 @@ h3 {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   justify-items: end;
+  margin: inherit;
 }
 
 .section-text {
   padding: 75px 0;
   text-align: center;
   margin: 10px auto;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+.card1 {
+  position: absolute;
+  right: 325px;
+  width: 50%;
+}
+
+.card2 {
+  position: absolute;
+  top: 350px;
+  bottom: 0px;
+  left: 275px;
+  width: 50%;
 }
 
 #headerStyle {
@@ -115,14 +160,12 @@ h3 {
   left: 60px;
 }
 
-#heroImg {
-  width: 40%;
-}
 #h2White {
   color: #ecf7ff;
 }
 #heroImg {
-  width: 90%;
+  width: 80%;
+  margin-left: 40px;
 }
 
 #homeColor {
@@ -134,10 +177,49 @@ h3 {
 }
 
 @media (max-width: 480px) {
-  .link-button {
+  h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #292e47;
+  }
+  #contact-button {
     display: none;
   }
   .grid-container {
-    display: block;
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .parent {
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+  .card1 {
+    position: absolute;
+    right: 170px;
+    width: 50%;
+  }
+  .card2 {
+    position: absolute;
+    top: 210px;
+    left: 210px;
+    width: 50%;
+  }
+  .flex-container {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+  }
+  #get-in-touch {
+    margin-right: 30px;
+  }
+  #nav-format {
+    display: grid;
   }
 }
