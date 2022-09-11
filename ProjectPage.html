@@ -8,90 +8,153 @@
     <title>Project Page</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <img
-          alt="Circle"
-          src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
-        />
-        <li><a href="">Home</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href=""> Services</a></li>
-        <li><a href="">Contact Us</a></li>
+    <!-- Navbar -->
+    <nav id="nav-format">
+      <ul class="flex-container-nav">
+        <img alt="Circle" src="project-assets/logos/circle.svg" />
+        <div class="flex-nav">
+          <li id="home-nav"><a id="homeColor" href="">Home</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href=""> Services</a></li>
+        </div>
+        <li id="contact-button">
+          <a class="link-button" href=""> Contact Us</a>
+        </li>
       </ul>
     </nav>
-    <main>
-      <h1>Simplify</h1>
-      <p>UI Design & App Development</p>
-      <img
-        id="simplifyImg"
-        alt="wallpaper-Simplify"
-        src="https://drive.google.com/uc?export=view&id=1a-7rFlxvHg0g6yfl7hAVksayYQkJzk1b"
-      />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-        expedita quam delectus natus cum saepe et aut impedit consectetur
-        deserunt nulla ea esse iste dolor quae rerum sequi, quidem quasi?<br />
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit
-        magnam cupiditate quaerat vero repellat voluptatum autem ipsam ea quo
-        dolore sequi eos in dolores quas, eius voluptates deserunt velit
-        aliquid.
-      </p>
+
+    <!-- Main section -->
+    <main id="mainStyle">
+      <h1 id="h1-projectSection">Simplify</h1>
+      <div id="container-projectSection">
+        <p id="p-projectSection-title" class="p-projectSection">
+          UI Design & App Development
+        </p>
+        <p class="p-projectSection">
+          Completed on<span id="date"> June 22,2021</span>
+        </p>
+      </div>
+      <div>
+        <div id="simplifyStyle">
+          <img
+            id="img-simplifyStyle"
+            alt="wallpaper-Simplify"
+            src="project-assets/projects-section/1.jpg"
+          />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sint
+          quaerat quam amet rem. Ducimus accusantium nulla ipsum consectetur vel
+          aut corrupti, laboriosam delectus quas voluptas voluptatibus quasi
+          quidem quaerat.
+        </p>
+        <p>
+          Sunt minima numquam assumenda corrupti natus corporis. Exercitationem
+          tempore dignissimos ullam necessitatibus nihil? Vero porro explicabo
+          minus, aspernatur quas ullam veniam, tenetur voluptatem, consectetur
+          quae nesciunt! Adipisci dolores facere magni.
+        </p>
+      </div>
     </main>
+
+    <!-- Other Projects -->
     <section>
       <h2>Other Projects</h2>
-      <img
-        class="projectSectionImg"
-        alt="Orbit"
-        src="https://drive.google.com/uc?export=view&id=13Gzge02yovXAhEC-BR6_KpxcufcToTsR"
-      />
-      <div>
-        <h4>Orbit</h4>
-        <p>
-          UI Design <br /><br />
-          <a href="">Learn more</a>
-        </p>
-      </div>
-      <img
-        class="projectSectionImg"
-        alt="Purify"
-        src="https://drive.google.com/uc?export=view&id=16rKQVZ9g4QZluatqPMqL_7zZjrZOacd-"
-      />
-      <div>
-        <h4>Purify</h4>
-        <p>
-          UI/UX Design <br /><br />
-          <a href="">Learn more</a>
-        </p>
-      </div>
-      <img
-        class="projectSectionImg"
-        alt="CriptoPie"
-        src="https://drive.google.com/uc?export=view&id=18ZwmbDNoL2dhIApXMrfMTmyjUCinDYjq"
-      />
-      <div>
-        <h4>CriptoPie</h4>
-        <p>
-          App Development <br /><br />
-          <a href="">Learn more</a>
-        </p>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img
+              class="projectSectionImg"
+              alt="Orbit"
+              src="project-assets/projects-section/4.jpg"
+            />
+            <div class="recentProjects">
+              <h4 class="header-background">Orbit</h4>
+              <p class="card-style">
+                UI Design & App Development <br /><br /><br /><br />
+                <a class="blueLetters" href="">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              class="projectSectionImg"
+              alt="Purify"
+              src="project-assets/projects-section/5.jpg"
+            />
+            <div class="recentProjects">
+              <h4 class="header-background">Purify</h4>
+              <p class="card-style">
+                Web Development <br /><br /><br /><br />
+                <a class="blueLetters" href="">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              class="projectSectionImg"
+              alt="CryptoPie"
+              src="project-assets/projects-section/6.jpg"
+            />
+            <div class="recentProjects">
+              <h4 class="header-background">CryptoPie</h4>
+              <p class="card-style">
+                User Expierence Desing <br /><br /><br /><br />
+                <a class="blueLetters" href="">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section>
-      <h2>Do you have any questions?</h2>
-      <p>Let us help you!</p>
-      <form>
-        <input placeholder="Enter your email" type="email" />
-        <button type="submit">Suscribe</button>
-      </form>
+
+    <!-- Contact Us Section -->
+    <section class="section-text" id="contactSection">
+      <div>
+        <h2>Do you have any questions?</h2>
+        <p id="p-contactSection">Let us help you!</p>
+        <form class="flex-container-contactSection">
+          <div id="container-contactSection">
+            <div id="mailImg">
+              <img
+                clas="contactSection-imgStyle"
+                src="project-assets/newsletter/icon/mail.svg"
+                alt="mail"
+              />
+            </div>
+            <input
+              placeholder="Enter your email"
+              type="email"
+              class="input-style"
+            />
+          </div>
+          <div id="container-button-contactSection">
+            <a class="link-button-suscribe" href="">Suscribe</a>
+          </div>
+        </form>
+      </div>
     </section>
-    <footer>
-      <img
-        alt="Circle"
-        src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
-      />
-      <p>2972 Westheimer Rd. Santa Ana , Illinois 85486</p>
-      <ul>
+
+    <!-- Footer -->
+    <footer class="grid-footer">
+      <div>
+        <div>
+          <img
+            id="circle-footer"
+            alt="Circle"
+            src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
+          />
+        </div>
+        <p>
+          2972 Westheimer Rd. Santa Ana, <br />
+          Illinois 85486
+        </p>
+      </div>
+      <ul class="grid-container-footer">
         <li><a href="">Team</a></li>
         <li><a href="">Service</a></li>
         <li><a href="">About Us</a></li>
