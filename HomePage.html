@@ -8,15 +8,12 @@
     <title>Home Page</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav id="nav-format">
-      <ul class="flex-container">
-        <img
-          alt="Circle"
-          src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/logos/circle.svg"
-        />
-
+      <ul class="flex-container-nav">
+        <img alt="Circle" src="project-assets/logos/circle.svg" />
         <div class="flex-nav">
-          <li><a id="homeColor" href="">Home</a></li>
+          <li id="home-nav"><a id="homeColor" href="">Home</a></li>
           <li><a href="">Projects</a></li>
           <li><a href=""> Services</a></li>
         </div>
@@ -25,6 +22,8 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Hero section -->
     <header class="grid-container">
       <div id="headerStyle">
         <h1>
@@ -48,172 +47,271 @@
         <img
           class="image1"
           id="heroImg"
-          src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/hero-section/hero-image.png"
+          src="project-assets/hero-section/hero-image.png"
           alt="hero-image"
         />
         <img
           class="card1"
           alt="card-1"
-          src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/hero-section/card-1.png"
+          src="project-assets/hero-section/card-1.png"
         />
         <img
           class="card2"
           alt="card-2"
-          src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/hero-section/card-2.png"
+          src="project-assets/hero-section/card-2.png"
         />
       </div>
     </header>
-    <section class="flex-container" >
+    <section class="flex-container-logos">
       <img
         class="logos"
         alt="Airbnb"
-        src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/logos/airbnb-logo.svg"
+        src="project-assets/logos/airbnb-logo.svg"
       />
       <img
         class="logos"
         alt="Google"
-        src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/logos/google-logo.svg"
+        src="project-assets/logos/google-logo.svg"
       />
       <img
         class="logos"
         alt="Microsoft"
-        src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/logos/microsoft-logo.svg"
+        src="project-assets/logos/microsoft-logo.svg"
       />
       <img
         class="logos"
         alt="Fedex"
-        src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/logos/fedex-logo.svg"
+        src="project-assets/logos/fedex-logo.svg"
       />
       <img
         class="logos"
         alt="Amazon"
-        src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/logos/amazon-logo.svg"
+        src="project-assets/logos/amazon-logo.svg"
       />
     </section>
+
+    <!-- Project Section -->
     <section>
       <h2>Recent Projects</h2>
-      <div class="grid-container">
-        <div>
-          <img
-            class="projectSectionImg"
-            alt="Simplify Project"
-            src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/projects-section/1.jpg"
-          />
-          <div class="recentProjects">
-            <h4>Simplify Project</h4>
-            <p>
-              UI Design & App Development <br /><br />
-              <a class="blueLetters" href="">Learn more</a>
-            </p>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img
+              class="projectSectionImg"
+              alt="Simplify Project"
+              src="project-assets/projects-section/1.jpg"
+            />
+            <div class="recentProjects">
+              <h4 class="header-background">Simplify Project</h4>
+              <p class="card-style">
+                UI Design & App Development <br /><br /><br /><br />
+                <a class="blueLetters" href="">Learn more</a>
+              </p>
+            </div>
           </div>
         </div>
-        <div>
-          <img
-            class="projectSectionImg"
-            alt="Dashcoin"
-            src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/projects-section/2.jpg"
-          />
-          <div class="recentProjects">
-            <h4>Dashcoin</h4>
-            <p>
-              Web Development <br /><br />
-              <a class="blueLetters" href="">Learn more</a>
-            </p>
+        <div class="column">
+          <div class="card">
+            <img
+              class="projectSectionImg"
+              alt="Dashcoin"
+              src="project-assets/projects-section/2.jpg"
+            />
+            <div class="recentProjects">
+              <h4 class="header-background">Dashcoin</h4>
+              <p class="card-style">
+                Web Development <br /><br /><br /><br />
+                <a class="blueLetters" href="">Learn more</a>
+              </p>
+            </div>
           </div>
         </div>
-        <div>
-          <img
-            class="projectSectionImg"
-            alt="Vectorify"
-            src="https://raw.githubusercontent.com/FranciscoPilosio/Mid-term-Project/main/project-assets/projects-section/3.jpg"
-          />
-          <div class="recentProjects">
-            <h4>Vectorify</h4>
-            <p>
-              User Expierence Desing <br /><br />
-              <a class="blueLetters" href="">Learn more</a>
-            </p>
+        <div class="column">
+          <div class="card">
+            <img
+              class="projectSectionImg"
+              alt="Vectorify"
+              src="project-assets/projects-section/3.jpg"
+            />
+            <div class="recentProjects">
+              <h4 class="header-background">Vectorify</h4>
+              <p class="card-style">
+                User Expierence Desing <br /><br /><br /><br />
+                <a class="blueLetters" href="">Learn more</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Testimonial Section -->
     <div class="section-text" id="clientOpinions">
-      <h2 id="h2White">Here What Our Clients Have to Say</h2>
-      <p id="clientOpinionsP">
-        "Circle helped s throught every stage of our startup. We really enjoyed
-        working with you"
-      </p>
+      <img
+        class="memojiSize"
+        src="project-assets/testimonial-section/orbit.png"
+        alt="background-orbit"
+      />
+      <div class="centered-h2">
+        <h2 id="h2White">Here What Our Clients Have to Say</h2>
+      </div>
+      <div class="centered-p">
+        <p id="clientOpinionsP">
+          "Circle helped s throught every stage of our startup. <br />
+          We really enjoyed working with you"
+        </p>
+      </div>
+      <div class="centered-profile">
+        <img
+          id="profileStyle"
+          src="project-assets/testimonial-section/profile.png"
+          alt="profile"
+        />
+      </div>
+      <div class="centered-name">
+        <p id="nameStyle">Kristin Watson</p>
+      </div>
+      <div class="centered-booking">
+        <p id="bookingStyle">Booking.com</p>
+      </div>
     </div>
+    <div class="top-right">
+      <img
+        class="memojiSize"
+        src="project-assets/testimonial-section/memoji-1.png"
+        alt="memoji-1"
+      />
+    </div>
+    <div class="top-left">
+      <img
+        class="memojiSize"
+        src="project-assets/testimonial-section/memoji-2.png"
+        alt="memoji-2"
+      />
+    </div>
+    <div class="bottom-right">
+      <img
+        class="memojiSize"
+        src="project-assets/testimonial-section/memoji-3.png"
+        alt="memoji-3"
+      />
+    </div>
+    <div class="bottom-left">
+      <img
+        class="memojiSize"
+        src="project-assets/testimonial-section/memoji-4.png"
+        alt="memoji-4"
+      />
+    </div>
+
+    <!-- Service Section -->
     <section>
       <h2>Our Services</h2>
-      <div class="grid-container">
-        <div>
-          <img
-            alt="User Interface Design"
-            src="https://drive.google.com/uc?export=view&id=1hSGi_VgP3Cd0KHSCzBekiqORXLX3pGsJ"
-          />
-          <div class="ourServices">
-            <h4>User Interface Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              consequuntur modi quis molestias, quasi perspiciatis facilis
-              ratione qui dolores, expedita dignissimos corporis quidem? Facilis
-              officia dolore voluptate ipsum molestiae dignissimos. <br /><br />
-              <a class="blueLetters" href="">Learn more</a>
-            </p>
+      <div class="row">
+        <div class="column">
+          <div class="card-ourServices">
+            <div class="ourServicesImg">
+              <img
+                alt="User Interface Design"
+                src="project-assets/services-section/icons/1.svg"
+              />
+            </div>
+            <div class="ourServices">
+              <h4 class="header-background">User Interface Design</h4>
+              <p class="card-style-ourServices">
+                Circle provides you with a <br />
+                stunning user interface design <br />
+                that is accesible to everyone.
+                <br /><br /><br />
+                <a class="blueLetters" href="">Learn more</a>
+              </p>
+            </div>
           </div>
         </div>
-        <div>
-          <img
-            alt="User Expierence Design"
-            src="https://drive.google.com/uc?export=view&id=17QjvpXliiAuA2MdqHS0Q3e1a7lGRfRah"
-          />
-          <div class="ourServices">
-            <h4>User Expierence Design</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              repudiandae quibusdam dignissimos magnam velit voluptate tempora
-              suscipit commodi ipsam impedit corporis quidem eius quod qui
-              veniam, quas aliquid quae laborum. <br /><br />
-              <a class="blueLetters" href="">Learn more</a>
-            </p>
+        <div class="column">
+          <div class="card-ourServices">
+            <div class="ourServicesImg">
+              <img
+                alt="User Expierence Design"
+                src="project-assets/services-section/icons/2.svg"
+              />
+            </div>
+            <div class="ourServices">
+              <h4 class="header-background">User Expierence Design</h4>
+              <p class="card-style-ourServices">
+                Circle always focuses on <br />
+                delivering the best user <br />
+                experience to your customer.<br /><br /><br />
+                <a class="blueLetters" href="">Learn more</a>
+              </p>
+            </div>
           </div>
         </div>
-        <div>
-          <img
-            alt="Application Development"
-            src="https://drive.google.com/uc?export=view&id=17hZsjHGK4UoT5C-f_vpnVm7a69NYBT0E"
-          />
-          <div class="ourServices">
-            <h4>Application Development</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
-              qui blanditiis neque in eaque, optio repudiandae beatae saepe.
-              Tempore nesciunt autem cumque maiores tenetur totam est vel
-              architecto officia fuga. <br /><br />
-              <a class="blueLetters" href="">Learn more</a>
-            </p>
+        <div class="column">
+          <div class="card-ourServices">
+            <div class="ourServicesImg">
+              <img
+                alt="Application Development"
+                src="project-assets/services-section/icons/3.svg"
+              />
+            </div>
+            <div class="ourServices">
+              <h4 class="header-background">Application Development</h4>
+              <p class="card-style-ourServices">
+                We develop high-quality mobile <br />
+                and web applications using the <br />
+                atest technology stack.
+                <br /><br /><br />
+                <a class="blueLetters" href="">Learn more</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact Us Section -->
     <section class="section-text" id="contactSection">
-      <h2>Do you have any questions?</h2>
-      <p>Let us help you!</p>
-      <form>
-        <input placeholder="Enter your email" type="email" />
-        <a class="link-button" href="">Suscribe</a>
-      </form>
+      <div>
+        <h2>Do you have any questions?</h2>
+        <p id="p-contactSection">Let us help you!</p>
+        <form class="flex-container-contactSection">
+          <div id="container-contactSection">
+            <div id="mailImg">
+              <img
+                clas="contactSection-imgStyle"
+                src="project-assets/newsletter/icon/mail.svg"
+                alt="mail"
+              />
+            </div>
+            <input
+              placeholder="Enter your email"
+              type="email"
+              class="input-style"
+            />
+          </div>
+          <div id="container-button-contactSection">
+            <a class="link-button-suscribe" href="">Suscribe</a>
+          </div>
+        </form>
+      </div>
     </section>
+
+    <!-- Footer -->
     <footer class="grid-footer">
       <div>
-        <img
-          alt="Circle"
-          src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
-        />
-        <p>2972 Westheimer Rd. Santa Ana , Illinois 85486</p>
+        <div>
+          <img
+            id="circle-footer"
+            alt="Circle"
+            src="project-assets/logos/circle.svg"
+          />
+        </div>
+        <p>
+          2972 Westheimer Rd. Santa Ana, <br />
+          Illinois 85486
+        </p>
       </div>
-
       <ul class="grid-container-footer">
         <li><a href="">Team</a></li>
         <li><a href="">Service</a></li>
