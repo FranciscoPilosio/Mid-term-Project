@@ -1,8 +1,8 @@
 body {
-  background-color: #ecf7ff;
+  background-color: #f2f4fc;
   margin-top: 5%;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 5%;
   font-family: sans-serif;
 }
@@ -12,31 +12,39 @@ a {
   list-style: none;
   text-decoration: none;
   color: #6b708d;
+  font-size: 20px;
 }
 p {
   margin-bottom: 30px;
+  color: #6b708d;
+  font-size: 23px;
 }
 
 section {
   margin-top: 60px;
 }
 
-.projectSectionImg {
-  width: 40%;
-}
-
 h1 {
   font-weight: bold;
-  font-size: 70px;
+  font-size: 65px;
   color: #292e47;
+  padding-block-start: 80px;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
   color: #292e47;
+
+  margin-bottom: 50px;
 }
 h3 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #292e47;
+}
+
+h4 {
   font-weight: bold;
   font-size: 20px;
   color: #292e47;
@@ -44,19 +52,75 @@ h3 {
 
 .blueLetters {
   color: #072ac8;
-}
-
-.logos {
-  filter: grayscale(100%);
-  padding: 2%;
-  width: 100px;
-  height: 100px;
+  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .ourServices,
 .recentProjects {
-  background-color: #f2f4fc;
-  margin-left: 2%;
+  background-color: white;
+  margin-left: 6%;
+}
+
+.projectSectionImg {
+  width: 357px;
+  height: 240px;
+}
+
+.column {
+  float: left;
+  width: auto;
+  padding: 0 40px 0 0;
+}
+
+.row {
+  margin: 0;
+  display: inline-flex;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: inherit;
+  background-color: white;
+  padding-bottom: 5px;
+  height: 420px;
+  width: 357px;
+}
+
+.card-ourServices {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: inherit;
+  background-color: white;
+  height: 360px;
+  width: 357px;
+  padding-top: 40px;
+}
+
+.ourServicesImg {
+  margin-left: 20.3906px;
+  border-radius: 50%;
+  background-color: #ecf7ff;
+  padding: 20px;
+  display: inline-flex;
+}
+
+.header-background {
+  background-color: white;
+}
+
+.card-style {
+  background-color: white;
+  font-size: 15px;
+}
+
+.card-style-ourServices {
+  background-color: white;
 }
 
 .link-button {
@@ -71,16 +135,38 @@ h3 {
 }
 
 .grid-container {
-  margin: 30px 0;
+  margin: 70px 0;
   display: grid;
   grid-template-columns: auto auto auto;
 }
 
 .flex-container {
+  display: inline-flex;
+  justify-content: space-around;
+  margin-top: inherit;
+  padding: 0;
+}
+
+.flex-container-logos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.logos {
+  filter: grayscale(100%);
+  padding: 2%;
+  width: 100px;
+  height: 100px;
+}
+
+.flex-container-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 100px;
+  padding: 0;
 }
 
 .flex-nav {
@@ -100,12 +186,11 @@ h3 {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-  justify-items: end;
+  justify-items: flex-start;
   margin: inherit;
 }
 
 .section-text {
-  padding: 75px 0;
   text-align: center;
   margin: 10px auto;
 }
@@ -114,6 +199,8 @@ h3 {
   position: relative;
   top: 0;
   bottom: 0;
+  width: 80%;
+  margin-left: 40px;
 }
 
 .image1 {
@@ -124,48 +211,103 @@ h3 {
 
 .card1 {
   position: absolute;
-  right: 325px;
-  width: 50%;
+  right: 285px;
+  width: 60%;
 }
 
 .card2 {
   position: absolute;
-  top: 350px;
+  top: 390px;
   bottom: 0px;
-  left: 275px;
-  width: 50%;
+  left: 330px;
+  width: 55%;
+}
+
+.centered-h2 {
+  position: absolute;
+  top: 15%;
+  transform: translateX(62%);
+}
+
+.centered-p {
+  position: absolute;
+  bottom: 40%;
+  transform: translateX(75%);
+}
+
+.centered-profile {
+  position: absolute;
+  bottom: 20%;
+  transform: translateX(800%);
+  width: 70px;
+  height: 60px;
+}
+.centered-name {
+  position: absolute;
+  bottom: 20%;
+  transform: translateX(550%);
+}
+.centered-booking {
+  position: absolute;
+  bottom: 16%;
+  transform: translateX(733%);
+}
+
+.top-right {
+  position: absolute;
+  top: 1820px;
+  left: 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.top-left {
+  position: absolute;
+  top: 1820px;
+  right: 160px;
+  width: 150px;
+  height: 150px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: -1500px;
+  right: 160px;
+  width: 150px;
+  height: 150px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: -1500px;
+  left: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 #headerStyle {
   margin-top: 10px;
 }
+
 #simplifyImg {
   width: 40%;
 }
 
 #clientOpinions {
   background-color: #292e47;
-  color: #f2f4fc;
-  height: 250px;
-  left: 60px;
-}
-
-#clientOpinionsP {
-  color: #ffc600;
-}
-
-#contactSection {
-  background-color: #ffc600;
-  height: 200px;
-  left: 60px;
+  position: relative;
+  width: 1292px;
+  height: 615px;
+  margin: 100px -70px;
 }
 
 #h2White {
   color: #ecf7ff;
 }
 #heroImg {
-  width: 80%;
+  width: 94%;
   margin-left: 40px;
+  float: right;
 }
 
 #homeColor {
@@ -176,15 +318,115 @@ h3 {
   background: "";
 }
 
-@media (max-width: 480px) {
+#get-in-touch {
+  margin-right: 30px;
+}
+
+#circle-footer {
+  height: 30px;
+}
+.memojiSize {
+  width: 100%;
+  height: 100%;
+}
+#profileStyle {
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+}
+#bookingStyle {
+  color: white;
+  font-size: 15px;
+}
+#nameStyle {
+  color: #a2d6f9;
+  font-size: 18px;
+}
+
+/* Contact Section */
+
+.flex-container-contactSection {
+  display: flex;
+  justify-content: center;
+  margin-top: inherit;
+  padding: 0;
+}
+
+.input-style {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding-left: 55px;
+  font-size: 18px;
+}
+
+.link-button-suscribe {
+  background-color: #072ac8;
+  color: #ecf7ff;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px 60px;
+  position: relative;
+  font-size: 18px;
+}
+
+#clientOpinionsP {
+  color: #ffc600;
+}
+
+#contactSection {
+  background-color: #ffc600;
+  height: 300px;
+  margin: 150px -70px;
+  padding: 60px 0;
+}
+
+#contactSection-imgStyle {
+  width: 100%;
+}
+#container-contactSection {
+  width: 330px;
+  height: 70px;
+  transform: translateX(-35px);
+  position: relative;
+}
+#mailImg {
+  position: relative;
+  bottom: -55px;
+  transform: translateX(25%);
+  width: 27px;
+  padding-left: 10px;
+}
+
+#container-button-contactSection {
+  transform: translate(35px, 60px);
+}
+
+#p-contactSection {
+  color: #292e47;
+  font-size: 20px;
+}
+
+@media (max-width: 390px) {
+  body {
+    margin: 0;
+  }
   h1 {
     font-weight: bold;
     font-size: 40px;
     color: #292e47;
   }
-  #contact-button {
-    display: none;
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
   }
+  ul {
+    padding: 0;
+  }
+  li {
+    padding: 20px 20px 20px 0;
+  }
+
   .grid-container {
     display: flex;
     text-align: center;
@@ -202,18 +444,124 @@ h3 {
   }
   .card1 {
     position: absolute;
-    right: 170px;
-    width: 50%;
+    right: 165px;
+    width: 190px;
   }
   .card2 {
     position: absolute;
-    top: 210px;
-    left: 210px;
-    width: 50%;
+    top: 230px;
+    left: 200px;
+    width: 190px;
   }
   .flex-container {
     display: inline-flex;
     padding: 0;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  .flex-container-nav {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+  }
+  .flex-container-logos {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .logos {
+    filter: grayscale(100%);
+    padding: 2%;
+    height: 30px;
+    width: auto;
+  }
+  .row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .column {
+    padding: 0 0 40px 0;
+  }
+  .grid-footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    padding-left: 20px;
+  }
+  .grid-container-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: initial;
+    margin: inherit;
+    padding-bottom: 30px;
+  }
+  .section-text {
+    text-align: center;
+    padding: 0;
+  }
+  .centered-h2 {
+    position: absolute;
+    top: 20%;
+    transform: translateX(0%);
+  }
+  .centered-p {
+    position: absolute;
+    bottom: 30%;
+    transform: translateX(7%);
+  }
+  .centered-profile {
+    position: absolute;
+    bottom: 16%;
+    transform: translateX(190%);
+    width: 60px;
+    height: 50px;
+  }
+  .centered-name {
+    position: absolute;
+    bottom: 15%;
+    transform: translateX(160%);
+  }
+  .centered-booking {
+    position: absolute;
+    bottom: 12%;
+    transform: translateX(215%);
+  }
+  .memojiSize {
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-right,
+  .top-left,
+  .bottom-left,
+  .bottom-right {
+    display: none;
+  }
+
+  .flex-nav {
+    display: inline-flex;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .flex-nav li {
+    padding: 20px 10px;
+  }
+
+  #home-nav {
+    padding: 20px 10px 20px 50px;
+  }
+  #contact-button {
+    display: none;
+  }
+  #heroImg {
+    width: 90%;
     margin: 0;
   }
   #get-in-touch {
@@ -221,5 +569,80 @@ h3 {
   }
   #nav-format {
     display: grid;
+  }
+  #clientOpinions {
+    position: relative;
+    background-color: #292e47;
+    color: #f2f4fc;
+    margin: 0 0 100px 0;
+    height: 500px;
+    width: 390px;
+  }
+  #contactSection {
+    background-color: #ffc600;
+    height: 300px;
+    padding: 50px;
+    margin: 0 0 100px 0;
+  }
+
+  #clientOpinionsP {
+    color: #ffc600;
+    font-size: 15px;
+  }
+  #profileStyle {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  #nameStyle {
+    color: #a2d6f9;
+    font-size: 18px;
+  }
+  #bookingStyle {
+    color: white;
+    font-size: 15px;
+  }
+
+  /* Contact Section */
+
+  .flex-container-contactSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: inherit;
+    padding: 0;
+  }
+
+  .input-style {
+    width: 80%;
+    height: 100%;
+    border: 0;
+  }
+
+  .link-button-suscribe {
+    background-color: #072ac8;
+    color: #ecf7ff;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 110px;
+  }
+
+  #container-contactSection {
+    width: 290px;
+    height: 50px;
+    transform: translate(-1px, -55px);
+    position: relative;
+  }
+
+  #container-button-contactSection {
+    transform: translate(0);
+  }
+
+  #mailImg {
+    position: relative;
+    bottom: -45px;
+    transform: translateX(25%);
+    width: 27px;
+    padding-left: 10px;
   }
 }
