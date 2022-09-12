@@ -124,7 +124,7 @@ h4 {
 }
 
 .link-button {
-  background-color: #072ac8;
+  background-color: #1239c8;
   color: #ecf7ff;
   text-align: center;
   text-decoration: none;
@@ -361,7 +361,7 @@ h4 {
 }
 
 .link-button-suscribe {
-  background-color: #072ac8;
+  background-color: #1239c8;
   color: #ecf7ff;
   text-align: center;
   text-decoration: none;
@@ -435,6 +435,92 @@ h4 {
 }
 #date {
   color: #6b708d;
+}
+
+/* Contact Page */
+
+.grid-contacPage {
+  display: grid;
+  grid-template-areas:
+    "fullName fullName"
+    "email phone"
+    "message message";
+  column-gap: 30px;
+  row-gap: 30px;
+  height: 600px;
+}
+
+.item1 {
+  grid-area: fullName;
+}
+
+.item2 {
+  grid-area: email;
+}
+
+.item3 {
+  grid-area: phone;
+}
+
+.item4 {
+  grid-area: message;
+}
+
+.grid-contacPage > div > div > label {
+  align-self: start;
+  color: #6b708d;
+  font-size: 23px;
+}
+.grid-contacPage > div > div {
+  padding-bottom: 10px;
+}
+.grid-contacPage > div > div > input {
+  width: 1132px;
+  color: #6b708d;
+  border: none;
+  background-color: #e6e9f1;
+  height: 60px;
+  font-size: 23px;
+  padding: 0 0 0 20px;
+}
+
+.grid-contacPage > div > input {
+  width: 540px;
+  color: #6b708d;
+  border: none;
+  background-color: #e6e9f1;
+  height: 60px;
+  font-size: 23px;
+  padding: 0 0 0 20px;
+}
+
+.grid-contacPage > div > div > textarea {
+  width: 1132px;
+  color: #6b708d;
+  border: none;
+  background-color: #e6e9f1;
+  height: 240px;
+  font-size: 23px;
+  font-family: sans-serif;
+  padding: 15px 0 0 20px;
+  resize: none;
+}
+
+.link-button-submit {
+  background-color: #1239c8;
+  color: #ecf7ff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 0;
+  position: absolute;
+  font-size: 19px;
+  width: 1152px;
+}
+
+.grid-footer-contactPage {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 150px;
 }
 @media (max-width: 390px) {
   body {
@@ -649,7 +735,7 @@ h4 {
   }
 
   .link-button-suscribe {
-    background-color: #072ac8;
+    background-color: #1239c8;
     color: #ecf7ff;
     text-align: center;
     text-decoration: none;
@@ -699,5 +785,75 @@ h4 {
     color: #292e47;
     font-size: 20px;
     margin-bottom: 30px;
+  }
+
+  /* Contact Page */
+
+  .grid-contacPage {
+    display: grid;
+    grid-template-areas:
+      "fullName "
+      "email "
+      "phone"
+      "message ";
+    column-gap: 30px;
+    row-gap: 30px;
+    height: 900px;
+  }
+
+  .grid-contacPage > div > div > input {
+    width: 370px;
+    color: #6b708d;
+    border: none;
+    background-color: #e6e9f1;
+    height: 60px;
+    font-size: 23px;
+    padding: 0 0 0 20px;
+  }
+  .grid-contacPage > div > input {
+    width: 370px;
+    color: #6b708d;
+    border: none;
+    background-color: #e6e9f1;
+    height: 60px;
+    font-size: 23px;
+    padding: 0 0 0 20px;
+  }
+
+  .grid-contacPage > div > div > textarea {
+    width: 370px;
+    color: #6b708d;
+    border: none;
+    background-color: #e6e9f1;
+    height: 240px;
+    font-size: 23px;
+    font-family: sans-serif;
+
+    padding: 15px 0 0 20px;
+    margin-block-end: 50px;
+  }
+
+  .link-button-submit {
+    background-color: #1239c8;
+    color: #ecf7ff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 165.43px;
+    position: inherit;
+    font-size: 19px;
+    width: 100%;
+  }
+
+  .grid-footer-contactPage {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-top: 106.8px;
+  }
+
+  #formStyle {
+    text-align: center;
   }
 }
