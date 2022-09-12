@@ -4,40 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Contact Us Page</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <img
-          alt="Circle"
-          src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
-        />
-        <li><a href="">Home</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href=""> Services</a></li>
-        <li><a href="">Contact Us</a></li>
+    <!-- Navbar -->
+    <nav id="nav-format">
+      <ul class="flex-container-nav">
+        <img alt="Circle" src="project-assets/logos/circle.svg" />
+        <div class="flex-nav">
+          <li id="home-nav"><a id="homeColor" href="">Home</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href=""> Services</a></li>
+        </div>
+        <li id="contact-button">
+          <a class="link-button" href=""> Contact Us</a>
+        </li>
       </ul>
     </nav>
-    <form>
+
+    <!-- Form -->
+    <form id="formStyle">
       <h1>Contact Us</h1>
-      <label> Full name </label>
-      <input placeholder="Enter your full name" type="text" />
-      <label>Email</label>
-      <input placeholder="Enter your email address" type="email" />
-      <label>Phone</label>
-      <input placeholder="Enter your phone number" type="number" />
-      <label>Message</label>
-      <input placeholder="Write yout message here...." type="text" />
-      <button type="submit">Submit</button>
+      <div class="grid-contacPage">
+        <div class="item1">
+          <div>
+            <label> Full name </label>
+          </div>
+          <div>
+            <input placeholder="Enter your full name" type="text" />
+          </div>
+        </div>
+        <div class="item2">
+          <div>
+            <label>Email</label>
+          </div>
+          <input placeholder="Enter your email address" type="email" />
+        </div>
+        <div class="item3">
+          <div>
+            <label>Phone</label>
+          </div>
+          <input placeholder="Enter your phone number" type="number" />
+        </div>
+        <div class="item4">
+          <div>
+            <label>Message</label>
+          </div>
+          <div>
+            <textarea name="text" cols="30" rows="10">
+Write your message here....</textarea
+            >
+          </div>
+          <div>
+            <a class="link-button-submit" href="">Submit</a>
+          </div>
+        </div>
+      </div>
     </form>
-    <footer>
-      <img
-        alt="Circle"
-        src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
-      />
-      <p>2972 Westheimer Rd. Santa Ana , Illinois 85486</p>
-      <ul>
+
+    <!-- Footer -->
+    <footer class="grid-footer-contactPage">
+      <div>
+        <div>
+          <img
+            id="circle-footer"
+            alt="Circle"
+            src="https://drive.google.com/uc?export=view&id=16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl"
+          />
+        </div>
+        <p>
+          2972 Westheimer Rd. Santa Ana, <br />
+          Illinois 85486
+        </p>
+      </div>
+      <ul class="grid-container-footer">
         <li><a href="">Team</a></li>
         <li><a href="">Service</a></li>
         <li><a href="">About Us</a></li>
