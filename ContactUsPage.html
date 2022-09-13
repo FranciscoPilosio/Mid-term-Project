@@ -13,12 +13,14 @@
       <ul class="flex-container-nav">
         <img alt="Circle" src="project-assets/logos/circle.svg" />
         <div class="flex-nav">
-          <li id="home-nav"><a id="homeColor" href="">Home</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href=""> Services</a></li>
+          <li id="home-nav">
+            <a href="HomePage.html" id="homeColor" href="">Home</a>
+          </li>
+          <li><a href="HomePage.html#projectSection">Projects</a></li>
+          <li><a href="HomePage.html#ourServices"> Services</a></li>
         </div>
         <li id="contact-button">
-          <a class="link-button" href=""> Contact Us</a>
+          <a class="link-button" href="#formStyle"> Contact Us</a>
         </li>
       </ul>
     </nav>
@@ -27,38 +29,59 @@
     <form id="formStyle">
       <h1>Contact Us</h1>
       <div class="grid-contacPage">
-        <div class="item1">
+        <div class="form-field" id="item1">
           <div>
-            <label> Full name </label>
+            <label for="fullName"> Full name &#42;</label>
           </div>
           <div>
-            <input placeholder="Enter your full name" type="text" />
+            <input
+              id="fullName"
+              placeholder="Enter your full name"
+              type="text"
+            />
+            <small></small>
           </div>
         </div>
-        <div class="item2">
+        <div class="form-field" id="item2">
           <div>
-            <label>Email</label>
+            <label for="email">Email</label>
           </div>
-          <input placeholder="Enter your email address" type="email" />
+          <input
+            id="email"
+            placeholder="Enter your email address"
+            type="email"
+          />
+          <small></small>
         </div>
-        <div class="item3">
+        <div class="form-field" id="item3">
           <div>
-            <label>Phone</label>
+            <label for="phone">Phone</label>
           </div>
-          <input placeholder="Enter your phone number" type="number" />
+          <input
+            id="phone"
+            placeholder="Enter your phone number"
+            type="number"
+          />
+          <small></small>
         </div>
-        <div class="item4">
+        <div class="form-field" id="item4">
           <div>
-            <label>Message</label>
+            <label for="message1">Message</label>
           </div>
           <div>
-            <textarea name="text" cols="30" rows="10">
-Write your message here....</textarea
-            >
+            <textarea
+              id="message1"
+              name="text"
+              placeholder="Write your message here...."
+            ></textarea>
+            <small></small>
           </div>
-          <div>
-            <a class="link-button-submit" href="">Submit</a>
+          <div class="form-field">
+            <input class="link-button-submit" type="submit" value="Submit" />
           </div>
+          <!-- <div>
+            <a id="submit" class="link-button-submit" href="">Submit</a>
+          </div> -->
         </div>
       </div>
     </form>
@@ -87,5 +110,6 @@ Write your message here....</textarea
         <li><a href="">Privacy Policy</a></li>
       </ul>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
