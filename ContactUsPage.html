@@ -14,10 +14,10 @@
         <img alt="Circle" src="project-assets/logos/circle.svg" />
         <div class="flex-nav">
           <li id="home-nav">
-            <a href="HomePage.html" id="homeColor" href="">Home</a>
+            <a href="index.html" id="homeColor" href="">Home</a>
           </li>
-          <li><a href="HomePage.html#projectSection">Projects</a></li>
-          <li><a href="HomePage.html#ourServices"> Services</a></li>
+          <li><a href="index.html#projectSection">Projects</a></li>
+          <li><a href="index.html#ourServices"> Services</a></li>
         </div>
         <li id="contact-button">
           <a class="link-button" href="#formStyle"> Contact Us</a>
@@ -38,6 +38,7 @@
               id="fullName"
               placeholder="Enter your full name"
               type="text"
+              required
             />
             <small></small>
           </div>
@@ -50,6 +51,7 @@
             id="email"
             placeholder="Enter your email address"
             type="email"
+            required
           />
           <small></small>
         </div>
@@ -59,8 +61,10 @@
           </div>
           <input
             id="phone"
-            placeholder="Enter your phone number"
-            type="number"
+            placeholder="Enter your phone number: +123456789"
+            type="tel"
+            pattern="^[+][0-9]{9}$"
+            required
           />
           <small></small>
         </div>
@@ -73,15 +77,18 @@
               id="message1"
               name="text"
               placeholder="Write your message here...."
+              required
+              minlength="50"
             ></textarea>
             <small></small>
           </div>
           <div class="form-field">
-            <input class="link-button-submit" type="submit" value="Submit" />
+            <input
+              id="link-button-submit-contactPage"
+              type="submit"
+              value="Submit"
+            />
           </div>
-          <!-- <div>
-            <a id="submit" class="link-button-submit" href="">Submit</a>
-          </div> -->
         </div>
       </div>
     </form>

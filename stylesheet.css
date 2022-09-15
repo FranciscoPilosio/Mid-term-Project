@@ -490,15 +490,14 @@ h4 {
   resize: none;
 }
 
-.link-button-submit {
-  background-color: #1239c8;
-  color: #ecf7ff;
-  text-align: center;
-  text-decoration: none;
-  padding: 20px 0;
-  position: absolute;
-  font-size: 19px;
-  width: 1152px;
+#link-button-submit-contactPage {
+  width: 1132px;
+  color: white;
+  border: none;
+  height: 60px;
+  font-size: 23px;
+  padding: 0 0 0 20px;
+  background-color: blue;
 }
 
 .grid-footer-contactPage {
@@ -785,6 +784,11 @@ h4 {
     color: #292e47;
     font-size: 20px;
     margin-bottom: 30px;
+  }
+  .lorem {
+    text-align: left;
+    padding-left: 5px;
+    font-size: 20px;
   }
 
   /* Contact Page */
