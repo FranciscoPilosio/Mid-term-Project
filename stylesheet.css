@@ -811,7 +811,7 @@ h4 {
     border: none;
     background-color: #e6e9f1;
     height: 60px;
-    font-size: 23px;
+    font-size: 20px;
     padding: 0 0 0 20px;
   }
   .grid-contacPage > div > input {
@@ -820,7 +820,7 @@ h4 {
     border: none;
     background-color: #e6e9f1;
     height: 60px;
-    font-size: 23px;
+    font-size: 20px;
     padding: 0 0 0 20px;
   }
 
@@ -830,7 +830,7 @@ h4 {
     border: none;
     background-color: #e6e9f1;
     height: 240px;
-    font-size: 23px;
+    font-size: 20px;
     font-family: sans-serif;
 
     padding: 15px 0 0 20px;
@@ -846,6 +846,17 @@ h4 {
     position: inherit;
     font-size: 19px;
     width: 100%;
+  }
+
+  #link-button-submit-contactPage {
+    width: 1132px;
+    color: white;
+    border: none;
+    height: 60px;
+    font-size: 23px;
+    padding: 0 0 0 20px;
+    background-color: blue;
+    width: 370px;
   }
 
   .grid-footer-contactPage {
